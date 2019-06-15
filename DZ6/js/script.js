@@ -14,11 +14,38 @@ let a = {//Обявляем исходный обект который буде�
 name: 'static',
 count: 0
 }
+
+function foo(a, key, repeat){
+  let b = {};
+  Object.assign(b, a);
+  let c = [];
+  for(var i = 0; i < repeat; i++){
+    b.key = i;
+    c.push(b); 
+  }
+  return c;
+}
+
+
+console.log(foo(a, 'count', 3));
+
+
+
+/*
+
+let c = [];
 function foo(key, repet){//принимает 2 значения. key принимает значение необходимого ключя чъе значение необходимо изменять
   for(let i = 0; i <= repet; i++){
   this[key] = i;
-    console.log(this);
+  console.log(this);
+  
+  for(let keys in this)
+{
+    b[keys] = this[keys];
+}
+  c.push(b);
   }
+  
 }
 
 foo.call(a, 'count', 3);//вызываем функцию с помощию метода call
