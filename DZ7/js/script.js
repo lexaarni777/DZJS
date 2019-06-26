@@ -26,6 +26,7 @@ function func(){ //обявлем функцию которая наполняе
   hours.children[1].innerHTML = clock[1];//возвращаем значения на верстку из массива clock
   hours.children[2].innerHTML = clock[2];//возвращаем значения на верстку из массива clock
 }
+func();
 setInterval(func, 1000);//запускаем функцию каждую секунду
 document.body.children[0].style.borderCollapse = 'collapse';//мутим со тилями таблицы схлопывая внутринние отступы
 let styleTable = document.getElementsByTagName('td');//мутим переменную которая хранит массив элемнтов td из таблицы чтобы им в цикле присвить стили

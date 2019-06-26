@@ -1,0 +1,43 @@
+section{
+  width: 200px;
+  height: 60px;
+  
+}
+.bulb{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display: inline-block;
+}
+
+.bulb2{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  display: inline-block;
+}
+
+.clicks{
+  background-color: yellow;
+}
+
+.btn{
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+.comentCss{
+  border: 1px solid red;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+
+.boockChild{
+  border: 1px solid blue;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 200px;
+  float: left;
+}
